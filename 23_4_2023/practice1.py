@@ -5,4 +5,8 @@ print(entire_cost_of_apples)
 
 inputstring = input("Enter a string ")
 print(inputstring,sep='#',end='&')
-
+print()
+if price_of_apples == 1:
+    print("1")
+else:
+    print("2")
