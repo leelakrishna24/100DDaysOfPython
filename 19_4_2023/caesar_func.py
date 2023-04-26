@@ -52,7 +52,7 @@ while True:
         cipher_string = input("enter text to decode: ")
         # take the shift value from user
         shift = int(input("Enter the shift: "))
-        decode()
+        decode(cipher_string)
     else:
         print("bye 👋")
         break
