@@ -60,4 +60,3 @@ elif choice == "decode":
 
     print(raw_value)
 
-
