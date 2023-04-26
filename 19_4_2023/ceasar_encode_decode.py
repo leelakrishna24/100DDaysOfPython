@@ -54,3 +54,4 @@ elif choice == "decode":
             raw_value = ''.join([raw_value, A2Z[j]])
 
     print(raw_value)
+
