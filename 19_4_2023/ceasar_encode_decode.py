@@ -5,13 +5,12 @@ small_alphabets = "abcdefghijklmnopqrstuvwxyz"
 a2z = []
 for i in small_alphabets:
     a2z.append(i)
+# print(a2z)
 
 cap_alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 A2Z = []
 for i in cap_alphabets:
     A2Z.append(i)
-
-# print(a2z)
 # print(A2Z)
 
 if choice == "encode":
@@ -19,9 +18,6 @@ if choice == "encode":
     raw_string = input("enter text to encode: ")
     # take the shift value from user
     shift = int(input("Enter the shift: "))
-
-    # print(a2z)
-    # print(A2Z)
     cipher_value = ''
     j = ''
     for i in raw_string:
@@ -43,7 +39,6 @@ elif choice == "decode":
     cipher_string = input("enter text to decode: ")
     # take the shift value from user
     shift = int(input("Enter the shift: "))
-
     raw_value = ''
     j = ''
     for i in cipher_string:
@@ -59,4 +54,3 @@ elif choice == "decode":
             raw_value = ''.join([raw_value, A2Z[j]])
 
     print(raw_value)
-
