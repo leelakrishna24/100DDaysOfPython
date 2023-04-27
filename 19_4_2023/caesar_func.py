@@ -40,24 +40,21 @@ def decode(x):
 
 while True:
     # ask user whether to decode or encode
-    choice = input("Choose whether you want to : \n"\
-                   "1.Encode\n" \
-                   "2.Decode\n" \
-                   "3.Exit\n")
+    choice = input("Choose whether you want to : \n" "1.Encode\n"  "2.Decode\n"  "3.Exit\n")
     if choice == "1":
         # take the input text from user
-        raw_string = input("enter text to encode: ")
+        raw_string = input("Enter text to Encode: ")
         # take the shift value from user
-        shift = int(input("Enter the shift: "))
+        shift = int(input("Enter the Shift: "))
         encode(raw_string)
     elif choice == "2":
         # take the encoded text from user
-        cipher_string = input("enter text to decode: ")
+        cipher_string = input("Enter text to Decode: ")
         # take the shift value from user
-        shift = int(input("Enter the shift: "))
+        shift = int(input("Enter the Shift: "))
         decode(cipher_string)
     elif choice == "3":
         print("bye 👋")
         break
     else:
-        print("Improper choice choosen , please choose a proper choice")
+        print("Improper choice , please choose a proper choice")
